@@ -6,7 +6,7 @@ To run the entire application using Docker Compose, follow these steps:
 
 2. Navigate to the root directory of the project.
 
-3. Run the following command with root access:
+3. Run the following command with root access (takes some time at first run):
 
 ```bash
 docker-compose up
