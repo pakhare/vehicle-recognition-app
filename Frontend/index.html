@@ -14,15 +14,12 @@
 	</nav>
 	<div id="app">
 	<div class="container">
-		<img v-if="imageReceived" id="uploadedImage" :src="imageUrl" alt="Uploaded Image">
-		<img v-if="imageReceived" id="processedImage" :src="processedUrl" alt="Processed Image" style="margin-left: 10px">
-		
+		<img v-if="imageReceived" id="uploadedImage" :src="imageUrl" alt="Uploaded Image"/>
+		<img v-if="imageReceived" id="processedImage" :src="processedUrl" alt="Processed Image" style="margin-left: 10px"/>
+	
 	</div>
-		
 		<input type="file" name="image" @change="handleFileChange" style="margin-top: 50px; font-size: 25px">
-		<br>
 		<button @click="uploadImage" style="margin-top: 50px; font-size: 25px">Upload Image</button>
-		
 		
 	
 	</div>

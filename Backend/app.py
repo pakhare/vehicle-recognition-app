@@ -35,11 +35,11 @@ def home():
 		
 		path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
 		file.save(path)
-		return "Success", 200
+		return jsonify({'imageUrl': f'{path}'})
 		
 	if request.method == 'GET':
 		procImage = detect(path)
-		return jsonify({'imageUrl': f'{path}', 'processedUrl': f'{procImage}'})
+		return jsonify({'processedUrl': f'{procImage}'})
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=True, host='0.0.0.0', port=5000)
