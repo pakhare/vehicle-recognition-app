@@ -11,7 +11,9 @@ To run the entire application using Docker Compose, follow these steps:
 ```bash
 docker-compose up
 ```
+4. Run Frontend/index.html
 
+_____________________________
 Folder Structure
 ```bash
 vehicle-recognition-app-main/
