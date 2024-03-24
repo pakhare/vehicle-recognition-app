@@ -30,7 +30,7 @@ vehicle-recognition-app-main/
 │   └── static/
 │       ├── styles.css
 │       └── script.js
-├── Docker-compose.yml
+├── docker-compose.yml
 ├── screencast.mp4
 └── README.md
 ```
