@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Vehicle Recognition</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+	<link rel="stylesheet" href="static/styles.css"/>
+</head>
+<body>
+	<nav class="nav">
+		Vehicle Recognition |&ensp; 
+		<a href="#" style="color:white"> Home</a>
+	</nav>
+	<div id="app">
+	<div class="container">
+		<img v-if="imageReceived" id="uploadedImage" :src="imageUrl" alt="Uploaded Image">
+		<img v-if="imageReceived" id="processedImage" :src="processedUrl" alt="Processed Image" style="margin-left: 10px">
+		
+	</div>
+		
+		<input type="file" name="image" @change="handleFileChange" style="margin-top: 50px; font-size: 25px">
+		<br>
+		<button @click="uploadImage" style="margin-top: 50px; font-size: 25px">Upload Image</button>
+		
+		
+	
+	</div>
+	<script src="static/script.js"></script>
+</body>
+</html>
